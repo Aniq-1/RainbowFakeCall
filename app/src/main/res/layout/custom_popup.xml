@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_25sdp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="kjvhfkjhfdggfh"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:background="@drawable/custom_popup_btn_bg"
+        android:layout_marginTop="@dimen/_8sdp"/>
+</LinearLayout>

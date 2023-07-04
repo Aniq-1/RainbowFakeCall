@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">Fake call for wednesday addams</string>
+    <string name="rateUs">Rate us <small>(AD)</small></string>
+
+    <string-array name="selectCallType">
+        <item> Whats App </item>
+        <item> Facebook </item>
+    </string-array>
+
+    <string-array name="setTimer">
+        <item>10 sec</item>
+        <item>30 sec</item>
+        <item>60 sec</item>
+        <item>300 sec</item>
+    </string-array>
+
+
+    <!--Privacy Policy Text-->
+
+    <string name="fragment1">Studio may ask its users to provide necessary identifiable personal information
+
+on using the services to incorporate with other data for improving user’s
+
+experience, which users can turn down any time before proceeding to use the
+
+services. Bear in mind, Straps App Studio does not deliberately offer its
+
+services to the users under the age of 13. So, Straps App Studio urges all of
+
+the users under the age of 13 to seek parental guidance before undertaking the
+
+services. Straps App Studio also advises the parents to monitor and keep a
+
+track of internet activities of their children.\n
+
+By using
+
+the services and products of Straps App Studio, you agree to observe and be
+
+bound by this privacy policy. Straps App Studio has your approval of
+
+collection, processing, use and disclose of the information given by you. You
+
+hereby accept the terms and conditions set by Straps App Studio.
+
+You may
+
+withdraw by not proceeding to using services and products of Straps App Studio.
+        <b>\nAccess to Smartphone Features:</b>
+<p>Straps App
+
+   Studio may ask its users to allow access to various features of their
+
+   smartphones such as camera, microphone, contacts and location solely for the
+
+   purposes of aligning with the features of our services and products and also to
+
+   increase efficiency and providing influential user experience.</p>
+
+<br />
+
+
+<br /><br /></string>
+
+    <string name="fragment2"><b>Information Collected by Straps Studio APP:</b>
+
+<p>Users over
+
+   the age of 13 will be asked to register before they will be able to use our
+
+   products and services. Users will have to provide their username, password,
+
+   date of birth and email address. Straps App Studio may attain some non-personal
+
+   data to enhance the user experience on the services and products that it
+
+   provides. Non-personal data may include: browser type, device version, type of
+
+   device and IP address. Please note that this statistical data will solely be
+
+   used to analyse demographical progress. \n This will help Straps App Studio in
+
+   identifying target market and certain areas to focus and bring improvement to. Straps
+
+   App Studio may ask users to provide contact information for surveys and
+
+   communication for future prospects and expectations of users from the
+
+   developers. Statistical data may also include high scores, timings and user
+
+   activities on the services and products to boost up the environment.</p>
+
+<br />
+<b>\nSocial Media Connection:</b>
+<p>Straps App
+
+   Studio also offers its users to submit their information through any of social
+
+   media platform. Users must be of age 13 to register on these platforms. Straps
+
+   App Studio may obtain data such as name, user ID, gender, location, avatar,
+
+   date of birth and email address. Straps App Studio assures its users that all
+
+   of the necessary gained personal information is encrypted.</p>
+<br />
+
+
+<b>\nUse and disclose of the information collected:</b>
+</string>
+
+    <string name="fragment3"><p>Straps App
+
+    Studio collects information only to improve the design of services and products
+
+    to garner more target audience. Straps App Studio ensure its users that all the
+
+    information collected through services or social media platform are fully
+
+    encrypted and are in hashed form through proper channels. Straps App Studio
+
+    takes immense measures to safeguard all the information and prevents from
+
+    unauthorized access.
+
+    However, on
+
+    certain occasions, Straps App Studio may disclose information to third parties
+
+    for advertising purposes. Straps App Studio use ad campaigns and utilities to
+
+    steer its products forward on the market and also for revenue generation
+
+    functions. Users’ information may be collected to tailor the advertisements
+
+    that may interest them.
+
+    Straps App
+
+    Studio may also disclose information to third parties in case if Straps App
+
+    Studio feels there is viable cause to bring a legal action against someone
+
+    deliberately sabotaging services and products.
+
+    Straps App
+
+    Studio also advises the users to take necessary precautions when asked for
+
+    information by third parties which are governed under their policies. Please
+
+    read those policies carefully and then proceed.
+     MetaUsage
+
+   We are using Meta service or facebook audience network for face ads running in our product it contains ads or monetization that can help us our business point.
+
+   Here we are showing facebook ads to use.</p>
+
+<br />
+<b>\nAmendments to the Privacy Policy:</b>
+
+<p>In order to
+
+   suggest variations, amendments and changes to our current privacy policy, feel
+
+   free to write, email or contact Straps App Studio on the contact information
+
+   provided.</p>
+
+<br /></string>
+
+<!--    &lt;!&ndash;Real Ids&ndash;&gt;ca-app-pub-1204663298278925~3578172412-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_native_large">ca-app-pub-1204663298278925/6598317885</string>
+
+    <string name="facebook_app_id">1853599031683633</string>
+    <string name="facebook_client_token">febb297808de6b8fcf3d1fa9547b936f</string>
+    <string name="facebook_interstitial_start">1853599031683633_1853599811683555</string>
+    <string name="facebook_native_large_start">1853599031683633_1887159208327615</string>
+    <string name="facebook_native_large_exit">1853599031683633_1887160174994185</string>
+    <string name="facebook_interstitial">1853599031683633_1887160998327436</string>
+    <string name="facebook_native_large">1853599031683633_1869360833440786</string>
+    <string name="Facebook_Native_placement">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="applovin_native_welcome">fd860b513e86c74f</string>
+    <string name="applovin_inter_welcome">f7973678cf45f3dd</string>
+    <string name="applovin_native">cc0e1f1080336b55</string>
+    <string name="applovin_inter">0f79d658b21d0e94</string>
+    <string name="applovin_banner">6111afeee9ab69ee</string>
+    <string name="applovin_appopen">49f9ca2c19971729</string>
+
+</resources>

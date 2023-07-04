@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.strapes.android.addams.fake.call.wednesday.message.activities.SelectCallingOptions">
+
+    <FrameLayout
+        android:id="@+id/bannerFrameCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/_8sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bannerFrameCall">
+
+        <RelativeLayout
+            android:id="@+id/top_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="17dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/back_button_image" />
+
+                <TextView
+                    android:id="@+id/text_Tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mrsmonsterrotate2"
+                    android:gravity="center"
+                    android:text="Call"
+                    android:textAlignment="center"
+                    android:textColor="#DBFE87"
+                    android:textSize="@dimen/_25ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_view_"
+                android:layout_width="@dimen/_275sdp"
+                android:layout_height="@dimen/_240sdp"
+                android:layout_below="@+id/relative_title"
+                android:layout_centerHorizontal="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_marginTop="28dp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+                        app:cardBackgroundColor="#191919"
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="#DBFE87"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <ImageView
+                                android:id="@+id/calling_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:padding="@dimen/_17sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.24"
+                                android:text="Action"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/call_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+                        app:cardBackgroundColor="#191919"
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        app:layout_constraintStart_toEndOf="@+id/cardView"
+                        app:layout_constraintTop_toTopOf="@+id/cardView"
+                        app:strokeColor="#DBFE87"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Template"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/list_Template"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_whatsapp_button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="WhatsApp"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_facebook_button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-40dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="Messenger"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp"
+                                        android:textStyle="bold" />`
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+                        app:cardBackgroundColor="#191919"
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                        app:layout_constraintStart_toStartOf="@+id/cardView2"
+                        app:strokeColor="#DBFE87"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:id="@+id/spSetTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Timer"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/list_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="-7dp"
+                                        android:layout_marginEnd="-10dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="now"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-10dp"
+                                        android:layout_marginEnd="-10dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="10s"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-10dp"
+                                        android:layout_marginEnd="-10dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="30s"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_60"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-10dp"
+                                        android:layout_marginEnd="-10dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="1m"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_300"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-10dp"
+                                        android:layout_marginEnd="-10dp"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/custom_color"
+                                        android:fontFamily="@font/acumin_variable_concept"
+                                        android:scaleX="0.7"
+                                        android:scaleY="0.7"
+                                        android:text="5m"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="10dp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+                        app:cardBackgroundColor="#191919"
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/cardView"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView"
+                        app:strokeColor="#DBFE87"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:id="@+id/start_call_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/img_type_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_25sdp"
+                                android:layout_weight="1.2"
+                                android:padding="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/selected_call_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_25sdp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_14sdp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_native_ad"
+                android:layout_below="@+id/top_view_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp">
+
+                <com.facebook.ads.NativeAdLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

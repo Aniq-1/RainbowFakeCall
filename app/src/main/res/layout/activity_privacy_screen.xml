@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".wednesday.message.activities.PrivacyScreen">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_02"
+        app:layout_constraintBottom_toTopOf="@+id/h25"
+        app:layout_constraintStart_toStartOf="@id/vertical_05"
+        app:layout_constraintEnd_toEndOf="@id/vertical_95"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/privacy_policy_icon_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:background="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/mrsmonsterrotate2"
+        android:textColor="@color/custom_color"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/h25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/h30"/>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/h30"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_85"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circle_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:ci_drawable="@drawable/dot_fill"
+        app:ci_drawable_unselected="@color/custom_color"
+        app:ci_height="@dimen/_5sdp"
+        app:ci_margin="@dimen/_5sdp"
+        app:ci_width="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_85"
+        app:layout_constraintStart_toStartOf="@id/vertical_05"
+        app:layout_constraintEnd_toEndOf="@id/vertical_95"/>
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="Skip"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:background="@drawable/skip_button"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/circle_indicator"
+        app:layout_constraintStart_toStartOf="@id/vertical_05"
+        app:layout_constraintEnd_toEndOf="@id/vertical_95"
+        app:layout_constraintBottom_toTopOf="@id/h1"/>
+
+    <TextView
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/custom_color"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:text="Agree"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/h1"
+        app:layout_constraintTop_toBottomOf="@id/circle_indicator"
+        app:layout_constraintStart_toStartOf="@id/vertical_05"
+        app:layout_constraintEnd_toEndOf="@id/vertical_95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
